@@ -1,0 +1,635 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+html,body{
+    height: 100%;
+}
+
+.container{
+    margin: 0 auto;
+    max-width: 1280px;
+}
+
+.clear{
+    clear: both;
+}
+
+header{
+    width: 100%;
+    height: 90vh;
+    min-height: 600px;
+    padding: 40px 2%;
+    background-size: cover;
+    /*background-size: contain;*/
+    background-position: center;
+    background-image: url('../img/capa.png');
+}
+
+/*------------------LOGO------------------*/
+
+.logo{
+    position: relative;
+    top: -10px;
+    width: 140px;
+    height: 40px;
+    float: left;
+    background-color: rgb(151, 1, 151);
+    text-align: center;
+    border-radius: 8px;
+}
+.logo p{
+    padding: 10px;
+    color: white;
+    font-weight: 500;
+}
+
+/*------------------HEADER + MENU------------------*/
+
+header nav{
+    float: right;
+}
+
+/*----------MOBILE--------*/
+
+nav.mobile-menu{
+    cursor: pointer;
+    display: none;
+    width: 32px;
+    height: 32px;
+    background-image: url('../img/menu.png');
+    background-size: 100% 100%; 
+}
+
+nav.mobile-menu ul{
+    border-radius: 4px;
+    display: none;
+    /*opacity: 0;
+    transition: 1s;*/
+    background-color: white;
+    position: absolute;
+    left: 14%;
+    top: 85px;
+    width: 80%;
+    color: white;
+    list-style-type: none;
+    text-align: center;
+}
+
+nav.mobile-menu ul li{
+    padding: 8px 0;
+    border-bottom: 1px solid black;
+    
+}
+
+nav.mobile-menu ul li:hover{
+    background-color: rgb(215, 191, 218);
+}
+
+nav.mobile-menu ul li a{
+    text-decoration: none;
+    color: black;
+}
+/*ooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo
+nav.mobile-menu:hover ul{
+    opacity: 1;
+}ooooooooooooooooooooooooooooooooooooooooooooooooooooooooo*/
+
+/*----------DESKTOP--------*/
+
+header nav.desktop-menu ul{
+    list-style-type: none;
+}
+
+header nav.desktop-menu li{
+    float: left;
+}
+
+header nav.desktop-menu ul a{
+    color: white;
+    margin: 20px;
+    text-decoration: none;
+}
+
+/*------------------CHAMADA------------------*/
+
+.chamada-1{
+    max-width: 600px;
+    float: right;
+    margin: 140px 175px;
+}
+
+.chamada-1 h2{
+    font-size: 40px;
+    color: white;
+    font-weight: normal;
+}
+
+.chamada-1 p{
+    color: white;
+    font-size: 15px;
+    padding-top: 10px;
+}
+
+/*------------------SECTION-1------------------*/
+
+section.section-1{
+    width: 100%;
+    background-color: #472562;
+    padding: 0 2%;
+    height: 400px;
+}
+
+.section-text{
+    width: 50%;
+    float: left;
+    color: white;
+    margin-top: 50px;
+    position: relative;
+    left: 90px;
+}
+
+.section-text h2{
+    font-weight: 300;
+    margin-left: 90px;
+}
+
+.section-text p{
+    margin-top: 20px;
+    font-weight: 300;
+    font-size: 20px;
+    margin-bottom: 5px;
+    margin-left: 90px;
+}
+
+.section-text ul{
+    line-height: 1.8;
+    list-style-position: inside;
+    font-size: 15px;
+    margin-left: 90px;
+}
+
+.section-text ul li{
+    float: left;
+    width: 100%;
+}
+
+.btn{
+    width: 185px;
+    height: 45px;
+    color: white;
+    cursor: pointer;
+    margin-top: 20px;
+    border-radius: 25px;
+    margin-left: 90px;
+    text-align: center;
+    padding: 10px;
+    background-color: rgb(189, 0, 189);
+}
+
+.img-section-1{
+    position: relative;
+    top: -50px;
+    float: left;
+    width: 50%;
+    background-image: url('../img/device.png');
+    height: 450px;
+    background-size: 100% 100%;
+}
+
+/*---------------------SECTION-2------------------*/
+
+section.section-2 .container{
+    max-width: 1000px;
+}
+
+section.section-2{
+    padding-top: 80px 2%;
+    background-color: white;
+    text-align: center;
+}
+
+section.section-2 h2{
+    color: #472663;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+section.section-2 p{
+    display: inline-block;
+    max-width: 900px;
+    text-align: justify;
+}
+
+section.section-2 img{
+    border: 1px solid purple;
+    border-radius: 10px;
+    position: relative;
+    top: 116px;
+    width: 100%;
+    margin-top: 1px;
+}
+
+/*------------------SECTION-3--------------*/
+
+section.section-3{
+    width: 100%;
+}
+
+
+
+.part-1{
+    width: 50%;
+    float: left;
+    background-color: #835FA7;
+    padding: 140px 20px 90px 0;
+    color: white;
+    text-align: justify;
+}
+
+.wraper-pt1{
+    float: right;
+    max-width: 500px;
+    padding: 0 30px;
+}
+
+.part-1 h2{
+    font-size: 25px;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.part-1 p{
+    margin-top: 10px;
+    font-size: 15px;
+}
+
+/*---------PARTE-2----------*/
+
+.part-2{
+    width: 50%;
+    float: left;
+    background-color:white;
+    padding: 140px 20px 90px 0;
+}
+
+.scrollequipe{
+    max-width: 600px;
+    padding-left: 20px;
+    overflow: hidden;
+}
+
+.scroll-wraper{
+    width: 100%;
+}
+
+.about-author{
+    float: left;
+    padding:0 20px;
+    width: 100%;
+    font-weight: 500;
+    color: rgb(22, 22, 22);
+}
+
+.name-author{
+    float: left;
+    width: 100%;
+}
+
+.wraper-name-author{
+    float: left;
+}
+
+.name-author h2{
+    font-weight: 400; 
+    font-size: 25px;
+    padding-right: 40px;
+    color: #232323;
+}
+
+.name-author p{
+    font-size: 15px;
+    color: #232323;
+    font-style: italic;
+}
+
+.img-author{
+    float: left;
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    background-image: url('../img/optimus.jpg');
+    background-size: 100% 100%;
+    background-color: transparent;
+}
+
+.description-author{
+    float: left;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.description-author p{
+    font-size: 15px;
+    color: #232323;
+    text-align: justify;
+}
+
+.slider-balls{
+    width: 100%;
+    float: left;
+    margin-top: 18px;
+    padding-left: 40px;
+}
+
+.slider-balls span{
+    width: 16px;
+    height: 16px;
+    float: left;
+    margin-right: 8px;
+    border-radius: 8px;
+    background-color: rgb(112, 112, 112);
+    cursor: pointer;
+}
+
+/*------------------SECTION-4-NEW-------------*/
+
+section.section-4{
+    background-color: #472563;
+    padding: 100px 0;
+}
+/*--PART-1 (FORM)--*/
+.form{
+    float: left;
+    width: 50%;
+    color: white;
+    padding-left: 10px;
+}
+
+.form h2{
+    font-size: 25px;
+    font-weight: 400;
+}
+
+.form p{
+    font-size: 15px;
+    font-weight: 400;
+    max-width: 400px;
+    padding-right: 10px;
+}
+
+.form form{
+    margin-top: 15px;
+}
+
+.form form input[type=text]{
+    width: 90%;
+    max-width: 480px;
+    height: 58px;
+    margin-top: 8px;
+    padding-left: 10px;
+    border: 1.5px solid rgb(112, 112, 112);
+    border-radius: 5px;
+    outline: none;
+}
+
+.form form textarea{
+    width: 90%;
+    height: 160px;
+    max-width: 480px;
+    padding: 15px;   
+    border: 1.5px solid rgb(112, 112, 112);
+    margin-top: 8px;
+    outline: none;
+    border-radius: 5px;
+}
+
+.form form input[type=submit]{
+    width: 100%;
+    max-width: 185px;
+    height: 50px;
+    color: white;
+    cursor: pointer;
+    margin-top: 10px;
+    border-radius: 25px;
+    padding: 10px;
+    background-color: rgb(189, 0, 189);
+    border: none;
+    font-size: 18px;
+    outline: none;
+}
+                                                        /*----PART-2 (MAP)----*/
+.map-wraper{
+    float: left;
+    width: 50%;
+    color: white;
+    padding: 0 10px;
+}
+
+.map-wraper h2{
+    font-size: 25px;
+    font-weight: 400;
+}
+
+.map-wraper-3{
+    width: 100%;
+    max-width: 480px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.map-wraper-2{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    padding-top: 100%;
+}
+
+.map{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    border: 4px solid rgb(112, 112, 112);;
+}
+
+footer{
+    padding: 40px 2%;
+    background-color: #192123;
+    color: white;
+}
+
+footer p:nth-of-type(1){
+    float: left;
+    font-size: 15px;
+}
+
+footer p:nth-of-type(2){
+    float: right;
+    font-size: 15px;
+}
+
+/*------------------------------------------------MEDIA QUERIES--------------------------------------------------*/
+
+@media screen and (max-width: 868px){
+    header{
+        width: 100%;
+        height: auto;
+        min-height: 90vh;
+        max-height: 700px;
+        padding: 40px 4%;
+    }
+
+    nav.desktop-menu{
+        display: none;
+    }
+
+    nav.mobile-menu{
+        display: block;
+    }
+
+/*------------------CHAMADA--------------*/
+
+    .chamada-1{
+        max-width: none;
+        width: 100%;
+        text-align: center;
+        float: right;
+        margin: 100px 0;
+    }
+    
+    .chamada-1 h2{
+        font-size: 30px;
+        color: white;
+        font-weight: normal;
+    }
+
+/*------------------SECTION-1--------------*/
+
+    section.section-1{
+        width: 100%;
+        padding: 40px 2%;
+        height: auto;
+        text-align: center;
+    }
+
+    .section-text{
+        width: 100%;
+        float: none;
+        margin: 0;
+        display: inline-block;
+        position: static;
+    }
+
+    .section-text h2{
+        margin-left: 0;
+    }
+
+    .section-text p{
+        margin-left: 0;
+    }
+
+    .section-text ul{
+        display: inline-block;
+        margin-left: 0;
+    }
+
+    .section-text ul li{
+        float: none;
+        text-align: left;
+    }
+    
+    .btn{
+        display: inline-block;
+        margin-left: 0;
+    }
+
+    .img-section-1{
+        display: none;
+    }
+
+/*------------------SECTION-2--------------*/
+
+    .section-2{
+        padding:40px 2%;
+    }
+
+/*------------------SECTION-4--------------*/
+
+    section.section-4 .container{
+        text-align: center;
+    }
+
+    .form{
+        float: none;
+        width: 100%;
+    }
+
+    .form p{
+        display: inline-block;
+    }
+
+    .map-wraper{
+        float: none;
+        width: 100%;
+        padding: 0 6%;
+        margin-top: 40px;
+    }
+
+    .map-wraper-3{
+        width: 80%;
+        padding-top: 80%;
+        max-width: none;
+        display: inline-block;
+        margin-top: 10px;
+        position: relative;
+    }
+    
+    .map-wraper-2{
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        padding-top: 0;
+    }
+
+}
+
+@media screen and (max-width: 580px){
+    .part-1{
+        width: 100%;
+        padding: 40px 0;
+    }
+
+    .part-2{
+        width: 100%;
+        padding: 40px 0;
+    }
+
+    section.section-2 img{
+        top: 16px;
+        margin-top: 20px;
+    }
+
+    footer{
+        text-align: center;
+    }
+    
+    footer p:nth-of-type(1){
+        float: none;
+    }
+    
+    footer p:nth-of-type(2){
+        margin-top: 8px;
+        float: none;
+    }    
+}
+
